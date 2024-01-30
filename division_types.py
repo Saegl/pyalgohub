@@ -5,9 +5,11 @@ b = 2
 assert a / b == -3.5
 
 # division with double '/' returns floor (int)
+# truncates towards negative infinity
 assert a // b == -4
 
 # this one truncates decimal part
+# truncates towards zero
 assert int(a / b) == -3
 
 # For x > 0 and y > 0
